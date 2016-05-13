@@ -9,7 +9,6 @@
 // standard C++ libraries
 #include <iostream>
 #include <stdexcept>
-#include <iostream>
 
 // tdogl classes
 
@@ -21,20 +20,17 @@
 // constants
 const glm::vec2 SCREEN_SIZE(800, 600);
 
-// globals
+// globalsoat
 GLFWwindow* gWindow = NULL;
 tdogl::Camera gCamera;
-GLfloat gDegreesRotated = 0.0f;
 std::vector<ModelInstance*> list_logo;
 
 
-GLfloat gTranslated = -5.5;
-const GLfloat POS_MAX = 3;
-const GLfloat POS_MIN = -5.5;
+float gTranslated = -5.5;
+const float POS_MAX = 3;
+const float POS_MIN = -5.5;
 
 GLfloat gScaled = 1;
-const GLfloat  SCAL_MAX = 3;
-const GLfloat  SCAL_MIN = 1;
 
 enum state { ZOOM_IN, ZOOM_OUT};
 state current_state = ZOOM_IN;
@@ -198,7 +194,6 @@ void AppMain() {
     gCamera.setNearAndFarPlanes(0.5f, 100.0f);
 
 
-    int i = 0;
     // run while the window is open
     float lastTime = (float)glfwGetTime();
     while(!glfwWindowShouldClose(gWindow)){

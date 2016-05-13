@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+.idea/*.iml
+.idea/*.xml
+
+list_logo
+

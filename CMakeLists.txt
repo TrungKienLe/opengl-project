@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(cube)
+project(list_logo)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -DGLM_FORCE_RADIANS")
 
@@ -8,10 +8,10 @@ set(SOURCE_FILES source/main.cpp source/tdogl/Bitmap.cpp source/tdogl/Bitmap.h s
 include_directories (thirdparty/std_image)
 include_directories (common)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "/home/kienlb/ClionProjects/cube/")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "/home/kienlb/ClionProjects/list_logo/")
 
-add_executable(cube ${SOURCE_FILES})
+add_executable(list_logo ${SOURCE_FILES})
 
-target_link_libraries(cube GL GLU GLEW glfw)
+target_link_libraries(list_logo GL GLU GLEW glfw)
 
 
